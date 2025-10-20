@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 from scipy.stats import randint
 
 # Load the dataset
-file_path = "/kaggle/input/students-performance-10000-clean-data-eda/students_performance.csv"  # Update this path
+file_path = "/kaggle/input/students-performance-10000-clean-data-eda/students_performance.csv" 
 data = pd.read_csv(file_path)
 
 # Preprocess the data
@@ -83,3 +83,4 @@ class_names = [str(cls) for cls in clf_best.classes_]
 plt.figure(figsize=(20, 10))
 plot_tree(clf_best, feature_names=feature_names, class_names=class_names, filled=True)
 plt.show()
+
